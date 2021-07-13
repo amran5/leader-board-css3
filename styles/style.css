@@ -127,32 +127,38 @@ Latest courses style start
     .container{
         width: 100%;
     }
-    .players, .blogs{
+    .players{
+        display: block;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .blogs, .courses{
         /* display: flex;
         justify-content: center;
         align-items: center; */
         grid-template-columns: repeat(1, 1fr);
     }
     .player, .blog{
-        justify-content: center;
         flex-direction: column;
     }
 }
 
-/* ------Tab Divice -------*/
+/* ------Tab Divices -------*/
 
 @media only screen and (min-width: 688px) and (max-width: 992px) {
     .container{
         width: 100%;
     }
     .players{
-        width: 50%;
         grid-template-columns: repeat(2, 1fr);
     }
-    .players h3{
-        font-size: 18px;
-    }
-    .blogs, .courses{
+    .blogs{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: 100%;
     }
 }
